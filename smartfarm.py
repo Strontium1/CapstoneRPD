@@ -14,7 +14,7 @@ while isRunning:
     try:
         model = tf.keras.models.load_model(filepath=model_path)
         print("Model is loaded.")
-        time.sleep(3)
+        time.sleep(1)
     except:
         quitKey = input("No model found. Press Y/y to try again, else will quit the program.\n")
         if quitKey.lower() != 'y':
@@ -49,7 +49,7 @@ while isPredicting == 'y':
         continue
 
     print("Image loaded.")
-    time.sleep(2)
+    time.sleep(1)
     os.system('cls||clear')
     
     image  = tf.cast(image, tf.float32)
